@@ -1,0 +1,366 @@
+@import "../css/reset.css";
+@import "../css/keyframes.css";
+body {
+  margin: 15px;
+}
+.header {
+  height: 820px;
+  background: url("../images/header-background.png") center/cover no-repeat;
+  position: relative;
+}
+.header .header__content {
+  padding-top: 265px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .header__content h1 {
+  color: #fff;
+  font-family: JosefinSans, sans-serif;
+  font-size: 40pt;
+  font-weight: 500;
+  letter-spacing: 7px;
+}
+.header .header__content p {
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: Titillium Web, sans-serif;
+  font-weight: 200;
+  letter-spacing: 8px;
+}
+.header .header__content form {
+  position: relative;
+  margin: 0 auto;
+  right: 75px;
+}
+.header .header__content form .header__search__bar input {
+  width: 500px;
+  height: 60px;
+  font-size: 17pt;
+  margin: 50px auto 120px;
+  padding: 5px 15px;
+  border: none;
+}
+.header .header__content form .header__search__bar input::placeholder {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 10pt;
+  font-family: Titillium Web, sans-serif;
+}
+.header .header__content form .header__search__bar input:focus {
+  outline: none;
+}
+.header .header__content form .header__submit input {
+  position: absolute;
+  top: 0;
+  height: 60px;
+  width: 150px;
+  border: 2px solid #fff;
+  margin: 50px auto 120px;
+  color: #fff;
+  font-family: Aleo, sans-serif;
+  font-size: 11pt;
+  letter-spacing: 2px;
+  padding-right: 40px;
+  padding-left: 16px;
+  background: #4a75ff url("../images/search-icon.png") no-repeat 90% 50%;
+}
+.header .header__content form .header__submit input:focus {
+  outline: none;
+}
+.header .header__content form .header__submit input:hover {
+  -webkit-box-shadow: inset 0 0 10px 0 rgba(255,255,255,0.86);
+  box-shadow: inset 0 0 10px 0 rgba(255,255,255,0.86);
+}
+.header .header__content .scrollDown {
+  display: flex;
+  flex-direction: column;
+}
+.header .header__content .scrollDown img {
+  display: block;
+  align-self: center;
+}
+.header .header__content .scrollDown [alt=arrow] {
+  align-self: center;
+  margin-top: 15px;
+}
+.blueFooter {
+  background: #4a75ff;
+  position: absolute;
+  height: 80px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.blueFooter p {
+  display: block;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  letter-spacing: 2px;
+}
+.blueFooter ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  max-width: 540px;
+}
+.blueFooter ul li a {
+  color: #fff;
+  font-family: Aleo, sans-serif;
+  text-decoration: none;
+  font-size: 1rem;
+  width: 100%;
+}
+@media screen and (max-width: 1600) {
+  .blueFooter ul li {
+    font-size: 11px;
+  }
+}
+.whyChooseUs {
+  background: url("../images/why-choose-us-background.png") center/cover no-repeat;
+  height: 650px;
+  display: flex;
+}
+.whyChooseUs .leftSide {
+  margin: 200px 100px 0 330px;
+  max-width: 650px;
+}
+.whyChooseUs .leftSide h2 {
+  font-size: 36px;
+  font-family: Aleo, sans-serif;
+  color: #fff;
+  margin-bottom: 65px;
+}
+.whyChooseUs .leftSide p {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Titillium Web, sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+.whyChooseUs .leftSide a {
+  font-size: 1.1rem;
+  display: inline-block;
+  background: #4a75ff;
+  color: #fff;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 50px;
+}
+.whyChooseUs .leftSide a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.whyChooseUs .leftSide a:hover {
+  background-color: #3e6cff;
+}
+.whyChooseUs .leftSide a span {
+  color: #fff;
+  font-family: Aleo, sans-serif;
+}
+.whyChooseUs .rigthSide {
+  margin: 120px 330px 120px 0;
+  max-height: 10vw;
+  position: relative;
+}
+.whyChooseUs .rigthSide .blueImage {
+  display: block;
+  position: absolute;
+  left: 125px;
+}
+.howItWorks {
+  height: 337px;
+  background: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.howItWorks div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.howItWorks div > img {
+  display: block;
+  margin-bottom: 40px;
+}
+.howItWorks div > p {
+  color: #fff;
+  font-size: 36px;
+  font-family: Aleo, sans-serif;
+  font-weight: 400;
+  line-height: 0.51;
+}
+.upperSpain__page {
+  height: 700px;
+  background: center/cover no-repeat url("../images/upper-spain-back.png");
+  width: 100%;
+  position: relative;
+}
+.upperSpain__page .upperSpain__contentbox {
+  padding: 2em;
+  width: 540px;
+  height: 370px;
+  background-color: rgba(38,35,36,0.9);
+  position: absolute;
+  left: 330px;
+  bottom: 100px;
+  color: #fff;
+}
+.upperSpain__page .upperSpain__contentbox h4 {
+  font-size: 1.3rem;
+  font-family: Titillium Web, sans-serif;
+}
+.upperSpain__page .upperSpain__contentbox h3 {
+  font-size: 1.45rem;
+  margin: 30px 0;
+  font-family: Titillium Web, sans-serif;
+}
+.upperSpain__page .upperSpain__contentbox p {
+  font-size: 1rem;
+  font-family: Titillium Web, sans-serif;
+}
+.upperSpain__page .upperSpain__contentbox a {
+  font-size: 1.1rem;
+  display: inline-block;
+  background: #4a75ff;
+  color: #fff;
+  margin-top: 30px;
+  padding: 1.1em 3.8em;
+  text-align: center;
+  text-decoration: none;
+  font-weight: Aleo, sans-serif;
+}
+.upperSpain__page .upperSpain__contentbox a:hover {
+  background: #3e6cff;
+}
+.lowerSpain__page {
+  height: 700px;
+  background: center/cover no-repeat url("../images/lower-spain-back.png");
+  width: 100%;
+  position: relative;
+}
+.lowerSpain__page .lowerSpain__contentbox {
+  padding: 2em;
+  width: 540px;
+  height: 370px;
+  background-color: rgba(38,35,36,0.9);
+  position: absolute;
+  right: 330px;
+  bottom: 100px;
+  color: #fff;
+}
+.lowerSpain__page .lowerSpain__contentbox h4 {
+  font-size: 1.3rem;
+  font-family: Titillium Web, sans-serif;
+}
+.lowerSpain__page .lowerSpain__contentbox h3 {
+  font-size: 1.45rem;
+  margin: 30px 0;
+  font-family: Titillium Web, sans-serif;
+}
+.lowerSpain__page .lowerSpain__contentbox p {
+  font-size: 1rem;
+  font-family: Titillium Web, sans-serif;
+}
+.lowerSpain__page .lowerSpain__contentbox a {
+  font-size: 1.1rem;
+  display: inline-block;
+  background: #4a75ff;
+  color: #fff;
+  margin-top: 30px;
+  padding: 1.1em 3.8em;
+  text-align: center;
+  text-decoration: none;
+  font-weight: Aleo, sans-serif;
+}
+.lowerSpain__page .lowerSpain__contentbox a:hover {
+  background: #3e6cff;
+}
+.testimonial__page {
+  height: 730px;
+  background: center/cover url("../images/testimonial-back.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial__page h3 {
+  font-family: Aleo, sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 120px;
+  font-weight: 300;
+}
+.testimonial__page .testimonial__content {
+  display: flex;
+}
+.testimonial__page .testimonial__content .testimonial__content__text {
+  padding: 2.25em 2em;
+  font-family: Titillium Web, sans-serif;
+  color: #fff;
+  background-color: #333;
+  max-width: 665px;
+}
+.testimonial__page .testimonial__content .testimonial__content__text p {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+.testimonial__page .testimonial__content .testimonial__content__text blockquote {
+  font-size: 1rem;
+  font-weight: 200;
+}
+.testimonial__page .testimonial__content .testimonial__content__text blockquote::first-line {
+  text-indent: 30px;
+}
+.testimonial__page .testimonial__content .testimonial__content__text img {
+  display: inline-block;
+  position: relative;
+  top: 20px;
+}
+.footer {
+  height: 268px;
+  background: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.footer .footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100px;
+  max-width: 170px;
+  margin-bottom: 50px;
+}
+.footer .footerContent h3 {
+  width: 100%;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: Titillium Web, sans-serif;
+  letter-spacing: 2px;
+}
+.footer .footerContent p {
+  color: #fff;
+  font-size: 1rem;
+  font-family: Titillium Web, sans-serif;
+  margin-bottom: 30px;
+  font-weight: 300;
+  text-align: justify;
+  width: 100%;
+}
+.footer .footerContent .logos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
